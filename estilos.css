@@ -1,0 +1,145 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;  
+}
+body{
+    font-size: x-large;
+}
+header{
+    display: flex;
+    background-color: #bfe3c3;
+    color: black;
+    text-align: center;
+    padding: 20px;
+   
+}
+.divTitulo{
+    flex: 80%;
+}
+nav{
+    background-color: #99928e;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+}
+nav a{
+    color: white;
+    font-size: 20px;
+    padding: 15px;
+    text-decoration: none;
+}
+nav a:hover{
+    background-color: #fff2d4;
+    color: black;
+}
+main{
+    display: flex;
+    flex-wrap: wrap;
+}
+aside{
+    flex: 30%;
+    background-color: #edffb3;
+    padding: 10px;
+    text-align: center;
+}
+section{
+    flex: 70%;
+    background-color: #fff2d4;
+    padding: 10px;
+}
+article{
+    margin-top: 30px;
+}
+article p{
+    text-align: justify;
+}
+footer{
+    background-color: #bfe3c3;
+    text-align: center;
+    padding: 20px;
+}
+.Contenedor{
+    display: flex;
+    flex-wrap: wrap;
+
+     /*Tarjetas */
+
+}
+.tarjeta{
+    border: 1px solid red;
+    width: 300px;
+    border-radius: 6px;
+    box-shadow: rgb(181, 134, 41) 5px 5px 5px; 
+    margin: 15px;
+}
+.tarjeta img{
+    width: 200px;
+    height: 250px;
+}
+.titulo-tarjeta{
+    text-align: center;
+    font-weight: 800;
+    padding-bottom: 20px; /* deja un espacio de separacion */
+    border-bottom: 1px solid red;
+    background-color: rgb(164, 108, 62);
+    color: white;
+    font-size: 20px;
+}
+.tarjeta div{ /* Este pading se aplica a todo elemento que este adentro de la clase tarjeta*/
+    padding: 15px; /* Deja un margen*/
+}
+.descripcion{
+    text-align: justify;
+}
+.precio{
+    text-align: center;
+}
+.tarjeta button{
+    padding: 10px;
+    background-color: rgb(218, 68, 9);
+    color: aliceblue;
+    font-size: 25px;
+    border: 1px solid #000;
+    
+}
+.body{
+    display: flex;
+}
+.enviar{
+    float: right;
+    justify-content: flex-end;
+}
+
+ /*Imagen y tabla */
+.container {
+    display: flex;
+  }
+  
+  .table {
+    flex: 1;
+  }
+  
+  .image {
+    flex: 1;
+    margin-left: auto;
+  }
+
+
+@media screen and (max-width: 1024px){
+        /*Tableta*/
+        .tarjeta{
+            width: 218px;
+        }
+        .tarjeta img{
+        width: 100px;
+        height: 180px;
+        }
+}
+ @media screen and (max-width: 767px){
+        /*celular*/
+        nav{
+            flex-flow: column;
+        }
+}
