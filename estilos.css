@@ -59,12 +59,14 @@ footer{
     background-color: #bfe3c3;
     text-align: center;
     padding: 20px;
+     /*Tarjetas */
 }
 .Contenedor{
     display: flex;
     flex-wrap: wrap;
-
-     /*Tarjetas */
+    flex-direction: row;
+    justify-content: center;
+    text-align: center;
 
 }
 .tarjeta{
